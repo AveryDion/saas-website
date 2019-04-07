@@ -78,6 +78,24 @@ p {
   width: 15%;
 }
 
+.banner-content {
+  color: #fff;
+}
+
+.btn {
+  background-color: #549b98;
+  border-color: #549b98;
+}
+
+.btn:hover {
+  background-color: #3d7a7e;
+  border-color: #3d7a7e;
+}
+
+h2 {
+  color: #3d7a7e;
+}
+
 @media only screen and (min-width: 38em) {
 
   .nav-open {
@@ -98,6 +116,14 @@ p {
   .logo {
     width: 10%;
     max-width: 100px;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .banner {
+    padding-top: 40%;
   }
 
 }

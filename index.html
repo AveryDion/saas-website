@@ -11,23 +11,31 @@
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="#banner">Jump to banner</a></li>
+    <li><a href="#features">Jump to features</a></li>
+  </ul>
+
   <header role="banner">
     <div class="grid grid-middle">
       <div class="unit s-1-4 logo">
-        <img class="img-flex" src="images/logo.svg" alt="">
+        <img class="img-flex" src="images/logo.svg" alt="Picture of a laptop">
       </div>
       <div class="unit s-1-4 pad-t">
         <h1 class="peta">CloudSafe</h1>
       </div>
       <div class="unit s-1-2 m-1-2">
-        <nav role="navigation">
+        <nav role="navigation" id="nav" tabindex="0">
           <input type="checkbox" class="nav-check" id="nav-check">
           <label class="nav-label" for="nav-check">
             <span class="bold visually-hidden">Navigate</span>
             <img class="nav-open" src="images/nav-icon.svg" alt="Open Navigation">
             <img class="nav-close" src="images/nav-icon-close.svg" alt="Close Navigation">
           </label>
-          <ul class="nav list-group">
+          <ul class="nav list-group zindex-1000">
             <li><a href="index.html" class="pad-b-1-2 pad-t-1-2 bold">Home</a></li>
             <li><a href="tour.html" class="pad-b-1-2 pad-t-1-2 bold">Features</a></li>
             <li><a href="pricing.html" class="pad-b-1-2 pad-t-1-2 bold">Pricing</a></li>
@@ -37,6 +45,50 @@
       </div>
     </div>
   </header>
+
+  <main role="main" id="main" tabindex="0">
+    <article>
+      <div class="banner embed embed-3by2" id="banner" tabindex="-1">
+        <img class="img-flex embed-item" src="images/home-banner.jpg" alt="" role="presentation">
+        <div class="banner-content max-length pin-lc gutter">
+          <p class="tena">Secure cloud storage for all your files</p>
+          <p class="exa">Store safely in the cloud</p>
+          <a class="btn exa" href="sign-up.html">Try it Free!</a>
+        </div>
+      </div>
+
+      <section id="features" tabindex="0">
+        <h2 class="text-center pad-t-2 zetta">Features</h2>
+        <div class="grid">
+          <div class="unit xs-1 unit-content-center text-center">
+            <i class="icon push-0 i-128">
+              <img class="img-flex" src="images/upload.svg" alt="" role="presentation">
+            </i>
+            <p class="not-italic giga icon-label">Upload Files</p>
+          </div>
+          <div class="unit xs-1 unit-content-center text-center">
+            <i class="icon push-0 i-128">
+              <img class="img-flex" src="images/download.svg" alt="" role="presentation">
+            </i>
+            <p class="not-italic giga icon-label">Download Files</p>
+          </div>
+          <div class="unit xs-1 unit-content-center text-center">
+            <i class="icon push-0 i-128">
+              <img class="img-flex" src="images/share.svg" alt="" role="presentation">
+            </i>
+            <p class="not-italic giga icon-label">Share Files</p>
+          </div>
+        </div>
+        <div class="center-text pad-t">
+          <a class="btn peta" href="features.html">View More!</a>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer role="contentinfo">
+  </footer>
 
 </body>
 </html>
