@@ -1,0 +1,103 @@
+html {
+  font-family: Raleway, sans-serif;
+  background-color: #ecf6f7;
+}
+
+header {
+  background-color: #549b98;
+  color: #fff;
+  position: relative;
+  max-height: 100px;
+}
+
+p {
+  font-family: Roboto, sans-serif;
+}
+
+.nav {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #549b98;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 15em;
+  text-align: center;
+}
+
+.nav a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav a:hover {
+  background-color: #3d7a7e;
+  color: #fff;
+}
+
+.nav-check {
+  position: absolute;
+  top: -8em;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-label {
+  cursor: pointer;
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.nav-open,
+.nav-close {
+  display: block;
+  width: 100%;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+}
+
+.logo {
+  width: 15%;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .nav-open {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    position: static;
+    width: 100%;
+  }
+
+  .nav li {
+    width: 25%;
+  }
+
+  .logo {
+    width: 10%;
+    max-width: 100px;
+  }
+
+}
