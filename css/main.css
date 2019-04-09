@@ -109,6 +109,10 @@ footer {
   color: #fff;
 }
 
+.sign-up-main {
+  background-color: #549b98;
+}
+
 @media only screen and (min-width: 38em) {
 
   .nav-open {
