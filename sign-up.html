@@ -56,44 +56,60 @@
           <h2 class="peta title">CloudSafe</h2>
         </div>
       </div>
-      <h3>Sign-up</h3>
 
       <section id="form" tabindex="0">
+        <h3 class="gutter max-length pad-t">Sign-up</h3>
         <form method="POST" action="https://formspree.io/dion0114@algonquinlive.com">
           <fieldset>
-            <legend>About You</legend>
+            <legend class="gutter max-length">About You</legend>
           </fieldset>
-
-          <label class="bold" for="first-name">First Name</label>
-          <input type="text" id="first-name" required>
-          <label class="bold" for="last-name">Last Name</label>
-          <input type="text" id="last-name" required>
-          <label class="bold" for="email">Email</label>
-          <input type="email" id="email" required>
-          <label class="bold" for="password">Password</label>
-          <input type="password" id="password" required>
-          <label class="bold" for="re-enter">Re-enter Password</label>
-          <input type="password" id="re-enter" required>
+          <div class="gutter max-length pad-b">
+            <label class="bold" for="first-name">First Name</label>
+            <input type="text" id="first-name" required>
+          </div>
+          <div class="gutter max-length pad-b">
+            <label class="bold" for="last-name">Last Name</label>
+            <input type="text" id="last-name" required>
+          </div>
+          <div class="gutter max-length pad-b">
+            <label class="bold" for="email">Email</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="gutter max-length pad-b">
+            <label class="bold" for="password">Password</label>
+            <input type="password" id="password" required>
+          </div>
+          <div class="gutter max-length pad-b">
+            <label class="bold" for="re-enter">Re-enter Password</label>
+            <input type="password" id="re-enter" required>
+          </div>
 
           <fieldset>
-            <legend>Choose a Plan</legend>
+            <legend class="gutter max-length pad-t pad-b">Choose a Plan</legend>
             <div class="grid">
-              <div class="unit xs-1">
-                <input type="radio" id="free" name="plan">
-                <label class="bold" for="free">Free</label>
+              <div class="unit xs-1 max-length gutter pad-b">
+                <div class="plan pad-b-1-2 pad-t-1-2">
+                  <input type="radio" id="free" name="plan">
+                  <label class="bold" for="free">Free</label>
+                </div>
               </div>
-              <div class="unit xs-1">
-                <input type="radio" id="advanced" name="plan">
-                <label class="bold" for="advanced">Advanced</label>
+              <div class="unit xs-1 max-length gutter pad-b">
+                <div class="plan pad-b-1-2 pad-t-1-2">
+                  <input type="radio" id="advanced" name="plan">
+                  <label class="bold" for="advanced">Advanced</label>
+                </div>
               </div>
-              <div class="unit xs-1">
-                <input type="radio" id="pro" name="plan">
-                <label class="bold" for="pro">Pro</label>
+              <div class="unit xs-1 max-length gutter pad-b">
+                <div class="plan pad-b-1-2 pad-t-1-2">
+                  <input type="radio" id="pro" name="plan">
+                  <label class="bold" for="pro">Pro</label>
+                </div>
               </div>
             </div>
           </fieldset>
-
-          <button class="btn sign-up-btn" type="submit">Create Account</button>
+          <div class="center-text">
+            <button class="btn sign-up-btn" type="submit">Create Account</button>
+          </div>
         </form>
       </section>
     </article>

@@ -98,8 +98,8 @@ p {
 }
 
 .sign-up-btn:hover {
-  background-color: #549b98;
-  border-color: #549b98;
+  background-color: #33686c;
+  border-color: #33686c;
 }
 
 h2 {
@@ -108,6 +108,14 @@ h2 {
 
 .plans {
   background-color: #ccc;
+}
+
+.plan {
+  background-color: #3d7a7e;
+}
+
+.plan:hover {
+  background-color: #33686c;
 }
 
 .card {
@@ -126,6 +134,10 @@ footer {
 
 .title {
   color: #fff;
+}
+
+input {
+  border-color: #fff;
 }
 
 @media only screen and (min-width: 38em) {
