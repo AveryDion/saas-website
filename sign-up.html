@@ -15,6 +15,8 @@
   <ul class="skip-links">
     <li><a href="#main">Jump to main content</a></li>
     <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="#main">Jump to main</a></li>
+    <li><a href="#form">Jump to form</a></li>
   </ul>
 
   <header role="banner">
@@ -48,10 +50,52 @@
     <article>
       <div class="grid">
         <div class="unit xs-1-4">
-          <img class="img-flex" src="images/logo.svg" alt="">
+          <img class="img-flex" src="images/logo.svg" alt="" role="presentation">
+        </div>
+        <div class="unit s-1-4 pad-t">
+          <h2 class="peta title">CloudSafe</h2>
         </div>
       </div>
+      <h3>Sign-up</h3>
 
+      <section id="form" tabindex="0">
+        <form method="POST" action="https://formspree.io/dion0114@algonquinlive.com">
+          <fieldset>
+            <legend>About You</legend>
+          </fieldset>
+
+          <label class="bold" for="first-name">First Name</label>
+          <input type="text" id="first-name" required>
+          <label class="bold" for="last-name">Last Name</label>
+          <input type="text" id="last-name" required>
+          <label class="bold" for="email">Email</label>
+          <input type="email" id="email" required>
+          <label class="bold" for="password">Password</label>
+          <input type="password" id="password" required>
+          <label class="bold" for="re-enter">Re-enter Password</label>
+          <input type="password" id="re-enter" required>
+
+          <fieldset>
+            <legend>Choose a Plan</legend>
+            <div class="grid">
+              <div class="unit xs-1">
+                <input type="radio" id="free" name="plan">
+                <label class="bold" for="free">Free</label>
+              </div>
+              <div class="unit xs-1">
+                <input type="radio" id="advanced" name="plan">
+                <label class="bold" for="advanced">Advanced</label>
+              </div>
+              <div class="unit xs-1">
+                <input type="radio" id="pro" name="plan">
+                <label class="bold" for="pro">Pro</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <button class="btn sign-up-btn" type="submit">Create Account</button>
+        </form>
+      </section>
     </article>
   </main>
 

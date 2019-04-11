@@ -92,6 +92,16 @@ p {
   border-color: #3d7a7e;
 }
 
+.sign-up-btn {
+  background-color: #3d7a7e;
+  border-color: #3d7a7e;
+}
+
+.sign-up-btn:hover {
+  background-color: #549b98;
+  border-color: #549b98;
+}
+
 h2 {
   color: #3d7a7e;
 }
@@ -111,6 +121,11 @@ footer {
 
 .sign-up-main {
   background-color: #549b98;
+  color: #fff;
+}
+
+.title {
+  color: #fff;
 }
 
 @media only screen and (min-width: 38em) {
