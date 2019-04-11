@@ -49,15 +49,14 @@
   <main role="main" id="main" tabindex="0" class="sign-up-main">
     <article>
       <div class="banner embed embed-3by2" id="banner" tabindex="-1">
-        <img class="img-flex embed-item" src="images/home-banner.jpg" alt="" role="presentation">
+        <img class="img-flex embed-item" src="images/signup-banner.jpg" alt="" role="presentation">
         <div class="banner-content max-length pin-lc gutter">
-          <p class="tena">Secure cloud storage for all your files</p>
-          <p class="exa">Store safely in the cloud</p>
-          <a class="btn exa" href="sign-up.html">Try it Free!</a>
+          <p class="tena">Start you free account today!</p>
+          <a class="btn exa" href="tour.html">Learn more</a>
         </div>
       </div>
 
-      <div class="grid">
+      <div class="grid pad-t">
         <div class="unit xs-1-4">
           <img class="img-flex" src="images/logo.svg" alt="" role="presentation">
         </div>
@@ -67,7 +66,9 @@
       </div>
 
       <section id="form" tabindex="0">
-        <h3 class="gutter max-length pad-t">Sign-up</h3>
+        <div class="gutter pad-t max-length">
+          <h3>Sign-up</h3>
+        </div>
         <form method="POST" action="https://formspree.io/dion0114@algonquinlive.com">
           <fieldset>
             <legend class="gutter max-length">About You</legend>
@@ -97,27 +98,37 @@
             <legend class="gutter max-length pad-t pad-b">Choose a Plan</legend>
             <div class="grid">
               <div class="unit xs-1 max-length gutter pad-b">
-                <div class="plan pad-b-1-2 pad-t-1-2">
+                <div class="plan pad-b pad-t-1-2">
                   <input type="radio" id="free" name="plan">
-                  <label class="bold" for="free">Free</label>
+                  <label class="bold" for="free"><span class="tera">Free</span></label>
                 </div>
               </div>
               <div class="unit xs-1 max-length gutter pad-b">
-                <div class="plan pad-b-1-2 pad-t-1-2">
-                  <input type="radio" id="advanced" name="plan">
-                  <label class="bold" for="advanced">Advanced</label>
+                <div class="grid plan">
+                  <div class="unit xs-1-2 pad-b-1-2 pad-t-1-2">
+                    <input type="radio" id="advanced" name="plan">
+                    <label class="bold" for="advanced"><span class="tera">Advanced</span></label>
+                  </div>
+                  <div class="unit text-right gutter pad-t-1-2 xs-1-2">
+                    <p class="tera">$8 per month</p>
+                  </div>
                 </div>
               </div>
               <div class="unit xs-1 max-length gutter pad-b">
-                <div class="plan pad-b-1-2 pad-t-1-2">
-                  <input type="radio" id="pro" name="plan">
-                  <label class="bold" for="pro">Pro</label>
+                <div class="grid plan">
+                  <div class="unit xs-1-2 pad-b-1-2 pad-t-1-2">
+                    <input type="radio" id="pro" name="plan">
+                    <label class="bold" for="pro"><span class="tera">Pro</span></label>
+                  </div>
+                  <div class="unit xs-1-2 text-right pad-t-1-2 gutter">
+                    <p class="tera">$15 per month</p>
+                  </div>
                 </div>
               </div>
             </div>
           </fieldset>
           <div class="center-text pad-b-2">
-            <button class="btn sign-up-btn" type="submit">Create Account</button>
+            <button class="btn exa bold sign-up-btn" type="submit">Create Account</button>
           </div>
         </form>
       </section>
